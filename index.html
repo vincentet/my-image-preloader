@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Project Image Loader</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" href="dist/css/style.min.css" media="all"/>
+<script src="dist/js/lib/modernizr-2.8.3.min.js"></script>
+<script src="dist/js/pace.min.js"></script>
+</head>
+
+<body>
+<section id="main-container">
+	<header></header>
+	<section id="main-wrapper" class="z-index">
+		<div class="header-banner">
+			<div class="img-container ar-16x9">
+				<img class="self-image-loader blurry" src="dist/images/daylight-forest-grass-247600-sm.jpg" data-large="dist/images/images-high-res/daylight-forest-grass-247600.jpg" alt="">
+			</div>
+			<div class="h-b-text">
+				<h2>Preload your images with style!</h2>
+				<p>See the magic happen.</p>
+				<div class="go-to-layer">
+					<a class="scroll-to-layer" href="#tut-layer">
+						<p class="text-center text-uppercase">Come on down!</p>
+						<div class="arrow-box arw-1"></div>
+						<div class="arrow-box arw-2"></div>
+						<div class="arrow-box arw-3"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div id="tut-layer" class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="img-container ar-16x9">
+							<img class="self-image-loader blurry" src="dist/images/architecture-automotive-building-221299-sm.jpg" data-large="dist/images/images-high-res/architecture-automotive-building-221299.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="img-container ar-16x9">
+							<img class="self-image-loader blurry" src="dist/images/beautiful-biology-blur-443547-sm.jpg" data-large="dist/images/images-high-res/beautiful-biology-blur-443547.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="img-container ar-16x9">
+							<img class="self-image-loader blurry" src="dist/images/adventure-air-aircraft-618609-sm.jpg" data-large="dist/images/images-high-res/adventure-air-aircraft-618609.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="self-image-loader bg-image" data-large="dist/images/images-high-res/architecture-automotive-building-221299.jpg">
+							<p>This is a background image</p>
+						</div>
+						<div class="content-holder">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+				</div><!-- end of row -->
+				<div class="tutorial-container">
+					<h4>How to implement:</h4>
+					<p>Download the needed files here: <a href="preloader_pack.zip">Preloader Pack Plus&trade;</a></p>
+					<p>Included in the pack are the javascript file <code>preloaderImage.js</code> and stylesheet <code>_preloaderImage.scss</code> needed for the plugin, just include it to your project.</p>
+					<p>You need to add the <a href="https://jquery.com/">jQuery</a> first just below the footer.</p>
+					<br>
+					<p>Add this line of script to initialize the loader.</p>
+					<div class="code-box">
+						<code>&lt;script&gt;</code>
+						<br>
+						<code>&nbsp;&nbsp;$('.self-image-loader').preloadImage();</code>
+						<br>
+						<code>&lt;script&gt;</code>
+					</div>
+					<br>
+					<p>To apply the preloader, add the class names of <code>self-image-loader</code> and <code>blurry</code>. The <code>preloadImage()</code> will find each of these elements and apply the loading effect.</p>
+					<p>For the <code>src</code> of the <code>&lt;img&gt;</code>, place the path of the low-resolution asset. This will be used to temporarily show the image. Place the path of the high-resolution image on the attribute <code>data-large</code></p>
+					<div class="code-box">
+						<code>&lt;img class="self-image-loader blurry" src="url_to_small_asset" data-large="url_to_high-resolution_asset" alt=""&gt;</code>
+					</div>
+					<br>
+					<p>As for the elements with a background image, add class name <code>self-image-loader</code> only. Place the path of the high-resolution image on the attribute <code>data-large</code></p>
+					<div class="code-box">
+						<code>&lt;div class="self-image-loader bg-image" data-large="url_to_high-resolution_asset"&gt;</code>
+						<br>
+						<code>&nbsp;&nbsp;&lt;p&gt;This is a background image&lt;/p&gt;</code>
+						<br>
+						<code>&lt;/div&gt;</code>
+					</div>
+					<br>
+					<p>Now isn't that a breeze? Now you're done. Let's code some!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container tutorial-container">
+				<h4>Sample Aspect Ratios</h4>
+				<p>This pack also includes some ready-made aspect ratios. See examples below:</p>
+				<br>
+				<div class="row">
+					<div class="col-sm-12 col-md-3">
+						<div class="img-container ar-1x1">
+							<img class="self-image-loader blurry" src="dist/images/adventure-air-aircraft-618609-sm.jpg" data-large="dist/images/images-high-res/adventure-air-aircraft-618609.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<h6>Aspect Ratio 1:1</h6>
+							<code>.ar-1x1</code>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="img-container ar-4x3">
+							<img class="self-image-loader blurry" src="dist/images/beautiful-biology-blur-443547-sm.jpg" data-large="dist/images/images-high-res/beautiful-biology-blur-443547.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<h6>Aspect Ratio 4:3</h6>
+							<code>.ar-4x3</code>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="img-container ar-3x2">
+							<img class="self-image-loader blurry" src="dist/images/adventure-air-aircraft-618609-sm.jpg" data-large="dist/images/images-high-res/adventure-air-aircraft-618609.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<h6>Aspect Ratio 3:2</h6>
+							<code>.ar-3x2</code>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="img-container ar-8x5">
+							<img class="self-image-loader blurry" src="dist/images/adventure-air-aircraft-618609-sm.jpg" data-large="dist/images/images-high-res/adventure-air-aircraft-618609.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<h6>Aspect Ratio 8:5</h6>
+							<code>.ar-8x5</code>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="img-container ar-16x9">
+							<img class="self-image-loader blurry" src="dist/images/architecture-automotive-building-221299-sm.jpg" data-large="dist/images/images-high-res/architecture-automotive-building-221299.jpg" alt="">
+						</div>
+						<div class="content-holder">
+							<h6>Aspect Ratio 16:9</h6>
+							<code>.ar-16x9</code>
+						</div>
+					</div>
+				</div>
+				<h4>How to use:</h4>
+				<p>Wrap the <code>&lt;img&gt;</code> with a container <code>&lt;div&gt;</code> and add the class <code>img-container</code> and the desired aspect ratio class.</p>
+				<p>See sample markup below:</p>
+				<div class="code-box">
+					<code>&lt;div class="img-container ar-16x9"&gt;</code>
+					<br>
+					<code>&nbsp;&nbsp;&lt;img class="self-image-loader blurry" src="url_to_small_asset" data-large="url_to_high-resolution_asset" alt=""&gt;</code>
+					<br>
+					<code>&lt;/div&gt;</code>
+				</div>
+				<br>
+				<p>That's just it. Happy coding! </p>
+			</div>
+		</div>
+
+	</section>
+</section>
+<footer></footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- Bootstrap js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Custom js -->
+<script src="dist/js/preloaderImage.js"></script>
+<script src="dist/js/all.min.js"></script>
+<script>
+	$('.self-image-loader').preloadImage();
+</script>
+</body>
+</html>

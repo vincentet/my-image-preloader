@@ -1,0 +1,130 @@
+// this is area is for reserved class
+#main-container { height:100%; height: auto !important; min-height:100%; }
+.hide { position:relative; }
+.ease,a,input[type="submit"],button { @include transition(all 0.5s ease); }
+.ease2 { @include transition(all 0.3s ease); }
+.loader { position:relative; overflow:hidden; background:#fff url('../images/page_template/loading.gif') no-repeat center; }
+.auto { max-width:$maxWidth; margin-left: auto; margin-right: auto; }
+.img-auto { width: 100%; height: auto; }
+#main-wrapper { }
+
+.zx1 { z-index: 1; }
+.zx2 { z-index: 2; }
+.zx3 { z-index: 3; }
+.zx4 { z-index: 4; }
+.zx5 { z-index: 5; }
+.zx6 { z-index: 6; }
+.overflow { overflow: hidden; }
+.pl-0 { padding-left: 0; }
+.pr-0 { padding-right: 0; }
+
+.preloader { position:fixed; width:100%; height:100%; overflow:hidden; }
+.explorer .preloader { background:#fff url('../images/page_template/loading.gif') no-repeat center; }
+.explorer .preloader .spinner { display:none; }
+// this is area is for reserved class
+
+// you can include here the rest of your class name eg. home page
+.header-banner {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  .h-b-text {
+    position: absolute;
+    top: 50%;
+    padding: 30px 0;
+    background-color: rgba(#000,0.2);
+    @include transform(translateY(-50%));
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(#000,0.86);
+    h2 { font-size: 46px; }
+    p { font-size: 16px; }
+  }
+  .go-to-layer {
+    // position: absolute;
+    // z-index: 2;
+    // bottom: 17%;
+    width: 100%;
+    height: auto;
+    a {
+      display: block;
+      width: 105px;
+      margin: auto;
+    }
+    p {
+      margin: 0 auto;
+      font-size: 12px;
+      color: #fff;
+      text-shadow: 0 0 3px rgba(#000,0.8);
+    }
+    .arrow-box {
+      width: 25px;
+      height: 25px;
+      margin: auto;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      @include transform(rotate(-45deg));
+      &.arw-1 { border-width: 2px; }
+      &.arw-2 { margin-top: -25px; border-left: 1px solid #fff;border-bottom: 1px solid #fff; @include animation(arrowDownAnim2 2s linear infinite); opacity: 1; }
+      &.arw-3 { margin-top: -25px; border-left: 1px solid #fff;border-bottom: 1px solid #fff; @include animation(arrowDownAnim3 2s linear infinite); opacity: 1; }
+      @include animation(arrowDownAnim 2s linear infinite);
+    }
+    @keyframes arrowDownAnim {
+      0%, 100% { @include transform(translateY(0) rotate(-45deg)); }
+      90% { @include transform(translateY(12px) rotate(-45deg)); }
+    }
+    @keyframes arrowDownAnim2 {
+      0% { border-width: 1px; @include transform(translateY(0) rotate(-45deg) scale(1));}
+      50% { opacity:1; }
+      100% { border-width: 0; opacity:0; @include transform(translateY(8px) rotate(-45deg) scale(0.8)); }
+    }
+    @keyframes arrowDownAnim3 {
+      0% { border-width: 1px;  @include transform(translateY(0) rotate(-45deg) scale(1));}
+      50% { opacity:1; }
+      100% { border-width: 0; opacity:0; @include transform(translateY(4px) rotate(-45deg) scale(0.5)); }
+    }
+  }
+}
+
+.section {
+  margin-bottom: 60px;
+  .content-holder {
+    padding: 10px 0 20px;
+    h2 {
+      margin: 10px auto;
+      font-size: 16px;
+      color: #000;
+    }
+    p {
+      margin: 8px auto;
+      font-family: 'Helvetica', sans-serif;
+      font-size: 12px;
+      color: #828093;
+    }
+  }
+}
+
+//background image presentation
+.bg-image {
+  width: 100%;
+  height: 460px;
+  padding: 30px;
+  background: url('../images/architecture-automotive-building-221299-sm.jpg') no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+  transition: all 1s linear;
+  p { font-size: 20px; color: #fff; }
+}
+
+.tutorial-container {
+  p { margin: 0 auto 5px; font-size: 14px; font-family: 'Helvetica', sans-serif; }
+  a { color: #1369bb; }
+}
+
+.code-box {
+  padding: 30px;
+  border: 1px solid #ccc;
+  code {color: #525252;}
+}
